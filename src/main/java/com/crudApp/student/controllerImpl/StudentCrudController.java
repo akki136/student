@@ -70,7 +70,7 @@ public class StudentCrudController implements com.crudApp.student.controller.Con
 
 
 
-	@RequestMapping(method = RequestMethod.DELETE,value = "/getStudent/{id}")
+	@RequestMapping(method = RequestMethod.DELETE,value = "/deleteStudent/{id}")
 	@Override
 	public ResponseEntity<StudentBO> deleteStudent(@PathVariable(name = "id") Integer id) {
 		try
@@ -92,7 +92,7 @@ public class StudentCrudController implements com.crudApp.student.controller.Con
 	}
 
 
-	@RequestMapping(method = RequestMethod.PUT,value = "/getStudent/{id}")
+	@RequestMapping(method = RequestMethod.PUT,value = "/updateStudent")
 	@Override
 	public ResponseEntity<StudentBO> updateStudent(StudentBO bo) {
 		try
